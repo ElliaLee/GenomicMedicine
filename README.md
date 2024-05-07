@@ -13,10 +13,10 @@ Contents:
      
 2.Indel_Calling.sh
     - Bash scripts
-    - Part of Research Project based in CRUK Cambridge Institute. 
+    - Part of Research Project based in CRUK Cambridge Institute.
     - Used for manual INDEL Investigation and visualisation on IGV.
     - includes scripts for:
-        - Caling INDEl calls on VCF files from Strelka and Manta
+        - Caling INDEl calls on VCF files from Strelka and Manta    
         - Generating BED file with final VCF file 
         - Subsetting BAM file with INDEL BED file to facilitate visualisation of IGV. 
 
