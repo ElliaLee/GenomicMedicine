@@ -9,7 +9,7 @@ Contents:
         - designing data structure
         - processing clinical data
         - performing statistical test
-        - build machine learning models
+        - building machine learning models
 
      
 2. Indel_Calling.sh
