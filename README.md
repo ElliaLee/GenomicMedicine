@@ -10,8 +10,9 @@ Contents:
         - processing clinical data
         - performing statistical test
         - build machine learning models
+
      
-2.Indel_Calling.sh
+2. Indel_Calling.sh
     - Bash scripts
     - Part of Research Project based in CRUK Cambridge Institute.
     - Used for manual INDEL Investigation and visualisation on IGV.
