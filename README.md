@@ -21,3 +21,11 @@ Contents:
         - Generating BED file with final VCF file 
         - Subsetting BAM file with INDEL BED file to facilitate visualisation of IGV. 
 
+3. INVAR_debug.py
+    - Python scripts
+    - Part of Research Project based in CRUK Cambridge Institute
+    - Used for debugging errors encountered during running INVAR pipeline
+    - includes sciprts for:
+        - Subsetting mutation lists (for testing peak memory usage)
+        - Generating mutation list (csv file) in correct format from .txt files obtained from multiple patients
+        - Subsetting total sample sheet for only those with available sequence data
