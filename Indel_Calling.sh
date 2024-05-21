@@ -5,20 +5,19 @@
     # bash script. bcftools. 
     # remove decoy sequences and filter for indels with more than one base pair. 
     
-    #Strelka
-    bcftools view -r chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr21,chr22,chrX,chrY \
-     -f PASS \
-     -i 'strlen(REF) - strlen(ALT) >= 2 || strlen(REF) - strlen(ALT) <= -2' \
-        "Input_VCF_file" \
-        -o indel_strelka.vcf
-    
-    
-    #Manta __ small indels have CIGAR in format
-    bcftools view -r chr1,chr2,chr3,chr4,chr5,chr6,chr7,chr8,chr9,chr10,chr11,chr12,chr13,chr14,chr15,chr16,chr17,chr18,chr19,chr20,chr21,chr22,chrX,chrY \
-     -f PASS -i 'INFO/CIGAR' \
-      "Input_VCF_file" \
-      -o indel_manta.vcf
-
+        #Strelka
+        /home/nrlab/mennea01/bcftools/bin/bcftools view -e 'CHROM ~ "_"' \
+         -f PASS \
+         -i 'strlen(REF) - strlen(ALT) >= 2 || strlen(REF) - strlen(ALT) <= -2' \
+            "SLX-22367.D702tp-D508tp_vs_SLX-22369.D702tp-D504tp.strelka.somatic_indels.vcf.gz" \
+            -o indel_strelka.vcf
+        
+        
+        #Manta __ small indels have CIGAR in format
+        /home/nrlab/mennea01/bcftools/bin/bcftools view -e 'CHROM ~ "_"' \
+         -f PASS -i 'INFO/CIGAR' \
+          "SLX-22367.D702tp-D508tp_vs_SLX-22369.D702tp-D504tp.manta.somatic_sv.vcf.gz" \
+          -o indel_manta.vcf
 
 # 2. Generating BED file from mutation calls (vcf) with flanking sequencing of 10bp
     # bash script. awk package.
