@@ -29,3 +29,9 @@ Contents:
         - Subsetting mutation lists (for testing peak memory usage)
         - Generating mutation list (csv file) in correct format from .txt files obtained from multiple patients
         - Subsetting total sample sheet for only those with available sequence data
+
+4. bamToFastq.sh
+   - Bash script
+   - Part of Research Project based in CRUK Cambridge Institute
+   - Used to convert BAM file back to FASTQ
+   - written to realign reads using internal pipeline.
