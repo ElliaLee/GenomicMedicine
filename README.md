@@ -35,3 +35,9 @@ Contents:
    - Part of Research Project based in CRUK Cambridge Institute
    - Used to convert BAM file back to FASTQ
    - written to realign reads using internal pipeline.
+  
+5. check_vcf.sh
+    - bash script
+    - part of Rearch Project based in CRUK Cambridge Institute.
+    - Written to check integrity of all vcf files in the directory & save names of corrupted files in a txt file. 
+    - Used to debug internal mutation calling pipeline. 
