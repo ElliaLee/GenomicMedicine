@@ -44,6 +44,14 @@ Contents:
 
 6. vcf_csv_merge.sh
    - bash script
-   - part of research project based in CRUK Cambridge Institue.
+   - part of research project based in CRUK Cambridge Institute.
    - written to create a merged mutation list (.csv) file from multiple vcf files, for INVAR2 analysis.
+  
+7. vcf_txt.sh
+   - bash script
+   - part of research project based in CRUK Cambridge Institute.
+   - written to debug merged vcf files having duplicate of same samples.
+   - output files include: mutation_list.txt and allele_count.txt
+   - mutation list.txt can be used for INVAR2 analysis.
+   - allele count.txt can be used to check allele count of the variant in normal sample (filtered for allele count >1)
    
