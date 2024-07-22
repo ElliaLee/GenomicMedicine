@@ -41,3 +41,9 @@ Contents:
     - part of Rearch Project based in CRUK Cambridge Institute.
     - Written to check integrity of all vcf files in the directory & save names of corrupted files in a txt file. 
     - Used to debug internal mutation calling pipeline. 
+
+6. vcf_csv_merge.sh
+   - bash script
+   - part of research project based in CRUK Cambridge Institue.
+   - written to create a merged mutation list (.csv) file from multiple vcf files, for INVAR2 analysis.
+   
