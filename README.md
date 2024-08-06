@@ -54,4 +54,10 @@ Contents:
    - output files include: mutation_list.txt and allele_count.txt
    - mutation list.txt can be used for INVAR2 analysis.
    - allele count.txt can be used to check allele count of the variant in normal sample (filtered for allele count >1)
+  
+8. Variant_Recovery.sh
+   - bash script
+   - part of research project based in CRUK Cambridge Institute.
+   - written for comparing mutation calling performace of tumour_vs_buffyCoat (standard) and tumour_vs_plasma (test).
+   - investigate filtering 'flags' of actual mutations and recover.
    
